@@ -9,6 +9,9 @@ List team members and/or short bio's here...
 * Hi my name is Ebod. I'm excited about this project because we get to learn how to program with a team.
 * ...
 * ...
+* ...Hello, my is Mo. I am 19 years old and also my favourite sport is soccer.
+* ...Joe
+* ...Ebod
 	
 ## 3. Technologies and Resources Used
 List technologies (with version numbers), API's, icons, fonts, images, media or data sources, and other resources that were used.
