@@ -4,9 +4,10 @@
 State your app in a nutshell, or one-sentence pitch. Give some elaboration on what the core features are.  
 This browser based web application to ... 
 
+
 ## 2. Names of Contributors
 List team members and/or short bio's here... 
-* ...
+* ... Hi my name is Joseph
 * ...
 * ...
 	
@@ -57,5 +58,7 @@ It has the following subfolders and files:
 
 
 ```
+
+
 
 
