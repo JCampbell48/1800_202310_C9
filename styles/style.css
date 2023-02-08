@@ -1,1 +1,13 @@
+.bg-info {
+    background-color: lightskyblue !important;     /* some secondary colour */
+}
 
+.navbar-light .navbar-brand {
+    color: #3B413C;
+}
+
+.navbar-brand{
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin-left: 1em;
+}
