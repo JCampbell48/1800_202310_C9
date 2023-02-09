@@ -12,3 +12,8 @@
     margin-left: 1em;
 }
 
+.container-fluid py-5 > img {
+    width: 1vw;
+
+}
+
