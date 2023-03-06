@@ -42,6 +42,7 @@
     <!-------------------------------------------->
     <!-- Other libraries and styles of your own -->
     <!-------------------------------------------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="./styles/style.css"> -->
   </head>
@@ -82,9 +83,7 @@
       <h1>Let's Login To Our Transit App</h1>
     </div>
     
-    <!-- Here is the original login div with firebase id -->
-    <!-- <div id="firebaseui-auth-container"></div> -->
-    <div id="loader">Loading...</div>
+  
 
     <!-- this is the temporary bootstrap login widget -->
     <!-- Section: Design Block -->
@@ -107,65 +106,22 @@
       </style>
 
       <!-- original class for bootstrap div: class="card mb-3" -->
-      <div id = "firebaseui-auth-container">  
+      <div class = "card mb-3">  
         <div class="row g-0 d-flex align-items-center">
           <div class="col-lg-4 d-none d-lg-flex">
             <img
               src= "images/Compass-Mini-Train-2.jpg"
-              alt="Trendy Pants and Shoes"
+              alt="Train Keys"
               class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5"
             />
           </div>
           <div class="col-lg-8">
             <div class="card-body py-5 px-md-5">
-              <form>
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="form2Example1" class="form-control" />
-                  <label class="form-label" for="form2Example1"
-                    >Email address</label
-                  >
-                </div>
+              
+                <!-- Here is the original login div with firebase id -->
+              <div id="firebaseui-auth-container"></div>  
+              <div id="loader">Loading...</div>
 
-                <!-- Password input -->
-                <div class="form-outline mb-4">
-                  <input
-                    type="password"
-                    id="form2Example2"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="form2Example2">Password</label>
-                </div>
-
-                <!-- 2 column grid layout for inline styling -->
-                <div class="row mb-4">
-                  <div class="col d-flex justify-content-center">
-                    <!-- Checkbox -->
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="form2Example31"
-                        checked
-                      />
-                      <label class="form-check-label" for="form2Example31">
-                        Remember me
-                      </label>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <!-- Simple link -->
-                    <a href="#!">Forgot password?</a>
-                  </div>
-                </div>
-
-                <!-- Submit button -->
-                <button type="button" class="btn btn-primary btn-block mb-4">
-                  Sign in
-                </button>
-              </form>
             </div>
           </div>
         </div>
@@ -174,26 +130,25 @@
     <!-- Section: Design Block -->
 
     <!-- our own footer goes here-->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-muted">&copy; 2023 Transit App</p>
-        
-        <!-- Testing footer using heading and background color with css id tag -->
-        <h2 id = "test-footer"> test footer header</h2>
-        <a href="/"
-            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap" />
-            </svg>
-        </a>
-    </footer>
+
+    <footer class="navbar justify-content-evenly bg-info fixed-bottom">
+      <div class="container py-3">
+          <i class="material-icons">upload</i>
+          <i class="material-icons">account_circle</i>
+          <i class="material-icons">favorite</i>
+          <i class="material-icons">map</i>
+      </div>
+  </footer>
+
+
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
-    <script src="./scripts/firebaseAPI_TEAM09.js"></script>
-    <script src="./scripts/authentication.js"></script>
-    <script src="./scripts/skeleton.js"></script>
-    <script src="./scripts/script.js"></script>
+    <script src="/scripts/firebaseAPI_TEAM09.js"></script>
+    <script src="/scripts/authentication.js"></script>
+    <script src="/scripts/skeleton.js"></script>
+    <script src="/scripts/script.js"></script>
     
   </body>
 </html>
