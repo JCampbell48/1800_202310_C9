@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My BCIT Project</title>
+    <meta name="search menu" content="Our 1800 App">
+
+    <!------------------------>
+    <!-- Required meta tags -->
+    <!------------------------>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-------------------------------------------------------->
+    <!-- Firebase 8 Library related CSS, JS, JQuery go here -->
+    <!-------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+
+    <!-------------------------------------------->
+    <!-- Other libraries and styles of your own -->
+    <!-------------------------------------------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/navSearchStyle.css">
+
+</head>
+
+<body>
+    <!------------------------------>
+    <!-- Your HTML Layout go here -->
+    <!------------------------------>
+    <body>
+    <div class="form-container">
+              <form class="form">
+                  <input id="search" type="text" class="input" placeholder="search..."/>
+                  <button id="clear" class="clear-results">clear</button>
+              </form>
+
+    </div>
+    <div class="results-container">
+       <ul class="results-list" id="list">
+
+       </ul>
+    </div>
+
+       <script src="index.js"></script>
+    </body>
+
+
+
+
+
+
+    <!---------------------------------------------->
+    <!-- Your own JavaScript functions go here    -->
+    <!---------------------------------------------->
+    <script src="./scripts/search.js"></script>
+    <!-- <script src="./scripts/script.js"></script> -->
+
+</body>
+
+</html>
