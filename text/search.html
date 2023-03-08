@@ -34,32 +34,27 @@
     <!------------------------------>
     <!-- Your HTML Layout go here -->
     <!------------------------------>
-    <body>
-    <div class="form-container">
-              <form class="form">
-                  <input id="search" type="text" class="input" placeholder="search..."/>
-                  <button id="clear" class="clear-results">clear</button>
-              </form>
+    <div id="searchForm">
+        <div class="results-container">
+            <ul class="results-list" id="list">
 
+            </ul>
+        </div>
+
+        <div class="form-container">
+            <form class="form">
+                <input id="search" type="text" class="input" placeholder="search..." />
+                <button id="submit" type="submit"><i class="material-icons">search</i></button>
+                <button id="clear" class="clear-results"><i class="material-icons">clear</i></button>
+            </form>
+        </div>
     </div>
-    <div class="results-container">
-       <ul class="results-list" id="list">
-
-       </ul>
-    </div>
-
-       <script src="index.js"></script>
-    </body>
-
-
-
-
 
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
-    <script src="./scripts/search.js"></script>
+    <script src="../scripts/search.js"></script>
     <!-- <script src="./scripts/script.js"></script> -->
 
 </body>

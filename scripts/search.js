@@ -18,6 +18,10 @@ const routes = [
     { name: '240 Downtown - Cambie at Georgia' }
 ]
 
+
+// search input button
+const searchInput = document.querySelector('.input')
+
 // Event listener for click.
 searchInput.addEventListener("input", (e) => {
     // 1. declare and assign the value of the event's target to a variable
@@ -66,9 +70,9 @@ clearButton.addEventListener("click", () => {
 
 // creating and declaring a function called "setList"
 // setList takes in a param of "results"
-function setList(results){
+function setList(results) {
 
-    for (const bus of results){
+    for (const bus of results) {
         // creating a li element for each result item
         const resultItem = document.createElement('li')
 
@@ -104,12 +108,10 @@ searchInput.addEventListener("input", (e) => {
 })
 
 // Remove the results from the page
-function clearList(){
-    // looping through each child of the search results list and remove each child
-    while (list.firstChild){
-        list.removeChild(list.firstChild)
-    }
-}
+function clearList() {
+    list.innerHTML = ''
+  }
+  
 
 // Event listener to clear list on click via user input
 clearButton.addEventListener("click", () => {
@@ -118,7 +120,7 @@ clearButton.addEventListener("click", () => {
 
 
 // function that returns 'no results' dialog to user for searches with no matches.
-function noResults(){
+function noResults() {
     // create an element for the error; a list item ("li")
     const error = document.createElement('li')
     // adding a class name of "error-message" to our error element
@@ -133,9 +135,9 @@ function noResults(){
 }
 
 
-function setList(results){
+function setList(results) {
     clearList()
-    for (const person of results){
+    for (const bus of results) {
         const resultItem = document.createElement('li')
         resultItem.classList.add('result-item')
         const text = document.createTextNode(bus.name)
@@ -143,7 +145,7 @@ function setList(results){
         list.appendChild(resultItem)
     }
 
-    if (results.length === 0 ){
+    if (results.length === 0) {
         noResults()
     }
 }

@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+.modal-body {
+    padding-bottom: 150%;
+}
+
 .content {
     padding: 20px;
 }
